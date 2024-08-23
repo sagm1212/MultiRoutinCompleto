@@ -1,0 +1,145 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px;
+  background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);
+}
+a{
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+  padding-right: 60px;
+}
+body{
+  margin: 0;
+}
+.active{
+  color: white;
+}
+.destino{
+  border: 1px solid gray;
+  padding: 8px 12px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.lista{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+}
+img{
+  width: 100%;
+  vertical-align: top;
+}
+.nombre{
+  font-size: 0.88em;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;   /* para que no aparezcan los puntos suspensivos  */ 
+  overflow: hidden; 
+}
+.situacion{
+margin: 5px 0 10px;
+font-size: 0.74em;
+display: -webkit-box;
+max-width: 100%;
+height: 24px;
+line-height: 1;
+ -webkit-line-clamp: 2;
+ -webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.destino a .aviso a{
+  background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);
+  color: white;
+  text-align: center;
+  padding: 2px 12px 4px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.imagenGrande{
+  width: 500px;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.circulo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  display: inline-block;
+}
+.contratar{
+  font-size: 0.9em;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+.anular{
+  font-size: 0.9em;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+.contrattar, .anular{
+  position: absolute;
+  top: 10px;
+  right: 80px;
+}
+.anularRuta{
+margin: 0 15px 3px;
+font-size: 0.9em;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+.login{
+  padding: 20px;
+  width: 520px;
+  height: 180px;
+  border:6px solid orangered;
+  border-radius: 12px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;color: orangered;
+}
+input{
+  color: orangered;
+  padding: 5px 9px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px dotted orangered;
+  border-radius: 5px 0 0 5px;
+  margin-left: 15px;
+  border-right: none;
+}
+.registro{
+  background-color: orangered;
+  color: white;
+  font-size: 1.1em;
+  padding: 4px 10px;
+  border: 1px solid orangered;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
