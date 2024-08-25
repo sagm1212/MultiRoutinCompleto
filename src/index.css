@@ -2,7 +2,7 @@ nav{
   display: flex;
   justify-content: space-between;
   padding: 6px 16px;
-  background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);
+  background: rgb(36,0,0);background: linear-gradient(0deg, rgba(36,0,0,1) 0%, rgba(0,194,255,1) 100%);
 }
 a{
   color: black;
@@ -77,25 +77,102 @@ text-overflow: ellipsis;
   background-color: green;
   display: inline-block;
 }
-.contratar{
+.contratar {
   font-size: 0.9em;
-  background-color: green;
+  background: rgb(27,36,0);
+  background: linear-gradient(0deg, rgba(27,36,0,1) 0%, rgba(0,255,124,1) 100%);
   color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 3px 9px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-.anular{
+
+.contratar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.75s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.contratar:hover::before {
+  opacity: 1;
+  width: 400%;
+  height: 400%;
+}
+
+.contratar:hover {
+  background: linear-gradient(0deg, rgba(0,255,124,1) 0%, rgba(27,36,0,1) 100%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.contratar:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anular {
+  margin-right: 2cm;
   font-size: 0.9em;
-  background-color: red;
+  background: rgb(36,0,0);
+  background: linear-gradient(0deg, rgba(36,0,0,1) 0%, rgba(255,34,0,1) 58%);
   color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 3px 9px;
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
+
+.anular::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.75s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.anular:hover::before {
+  opacity: 1;
+  width: 400%;
+  height: 400%;
+}
+
+.anular:hover {
+  background: linear-gradient(0deg, rgba(255,34,0,1) 0%, rgba(36,0,0,1) 58%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.anular:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .contrattar, .anular{
+
   position: absolute;
   top: 10px;
   right: 80px;
@@ -142,4 +219,97 @@ input{
   border: 1px solid orangered;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
+}
+.logout {
+  background: rgb(18,208,200);
+  background: radial-gradient(circle, rgba(18,208,200,1) 0%, rgba(17,114,177,0.72) 58%);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.logout::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.75s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.logout:hover::before {
+  opacity: 1;
+  width: 400%;
+  height: 400%;
+}
+
+.logout:hover {
+  background: radial-gradient(circle, rgba(17,114,177,1) 0%, rgba(18,208,200,1) 58%);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.logout:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.botonVolver {
+  margin-top: 10px;
+  background: rgb(36,0,0);
+  background: rgb(36,0,0);background: linear-gradient(0deg, rgba(36,0,0,1) 0%, rgba(210,130,17,1) 0%, rgba(255,25,0,1) 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.botonVolver::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.75s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.botonVolver:hover::before {
+  opacity: 1;
+  width: 400%;
+  height: 400%;
+}
+
+.botonVolver:hover {
+  background: linear-gradient(0deg, rgba(255,25,0,1) 0%, rgba(210,130,17,1) 0%, rgba(36,0,0,1) 100%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.botonVolver:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

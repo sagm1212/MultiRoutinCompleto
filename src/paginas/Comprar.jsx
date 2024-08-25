@@ -48,7 +48,7 @@ const Comprar = () => {
            <img src={imagen} alt=""/>
            {(!encontardo) && <button className="contratar" onClick={contratar}>Contratar</button>}
            {(encontardo) && <button className="anular" onClick={anular}>Anular</button>}
-          <div className="botonVolver"> <button onClick={volver}>Volver</button> </div>
+          <div > <button className="botonVolver" onClick={volver}>Volver</button> </div>
         </div>
       </div>
     </>

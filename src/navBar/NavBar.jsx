@@ -17,7 +17,7 @@ const NavBar = () => {
         <NavLink to="/no"> Norte y Este </NavLink>
         <NavLink to="/viaje"> mi viaje </NavLink>
       </div>
-      <button onClick={logout}>Logout</button>
+      <button className='logout' onClick={logout}>Logout</button>
      </nav>
     </>
   )
