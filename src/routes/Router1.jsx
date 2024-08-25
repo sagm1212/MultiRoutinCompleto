@@ -9,9 +9,9 @@ const Router1 = () => {
     <>
      <Routes>                             
         <Route path="login" element={
-          // <RutasPublicas>
+          <RutasPublicas>
             <Login/>
-          // </RutasPublicas>
+           </RutasPublicas>
           }/>
 
         <Route path="/*" element={

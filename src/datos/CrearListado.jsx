@@ -7,8 +7,9 @@ const CrearListado = ({ zona }) => {
   return (
     <>
       <section className="lista">
-      {listado.map((dato, index)=>
-        (<Destino key={index} nombre={dato.nombre} imagen={dato.imagen} situacion={dato.situacion}/>)
+      {listado.map((dato)=>
+      <Destino key={dato.nombre} {...dato} />
+        // (<Destino key={index} nombre={dato.nombre} imagen={dato.imagen} situacion={dato.situacion}/>)
         )}
     </section>
     </>
