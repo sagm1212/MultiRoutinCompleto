@@ -41,11 +41,11 @@ const Comprar = () => {
   return (
     <>
       <div className="contenido">
-      <h1>{nombre}</h1>
+      <h1 className="">{nombre}</h1>
       <div className="servicios">{destinoEncontrado.servicio}</div>
         <div className="imagenGrande"> 
           <div className="precio">{destinoEncontrado.precio}$</div>
-           <img src={imagen} alt=""/>
+           <img className="imagenGrandota" src={imagen} alt=""/>
            {(!encontardo) && <button className="contratar" onClick={contratar}>Contratar</button>}
            {(encontardo) && <button className="anular" onClick={anular}>Anular</button>}
           <div > <button className="botonVolver" onClick={volver}>Volver</button> </div>

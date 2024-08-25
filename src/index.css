@@ -3,6 +3,7 @@ nav{
   justify-content: space-between;
   padding: 6px 16px;
   background: rgb(36,0,0);background: linear-gradient(0deg, rgba(36,0,0,1) 0%, rgba(0,194,255,1) 100%);
+  cursor: pointer;
 }
 a{
   color: black;
@@ -23,13 +24,21 @@ body{
   border-radius: 5px;
 }
 .lista{
+  margin-top: 20px;
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
 }
+.imagenGrandota{
+  margin-top: 20px;
+}
 img{
   width: 100%;
   vertical-align: top;
+  transition: 0.4s ease-in-out;
+}
+img:hover{
+  transform: scale(1.1)
 }
 .nombre{
   font-size: 0.88em;
@@ -78,6 +87,7 @@ text-overflow: ellipsis;
   display: inline-block;
 }
 .contratar {
+  margin-top: 15px;
   font-size: 0.9em;
   background: rgb(27,36,0);
   background: linear-gradient(0deg, rgba(27,36,0,1) 0%, rgba(0,255,124,1) 100%);
